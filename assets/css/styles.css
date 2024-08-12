@@ -99,7 +99,7 @@ a {
     background: var(--primary-color);
     position: sticky;
     top: -22px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .header .body {
@@ -317,6 +317,7 @@ a {
     display: flex;
     align-items: center;
     gap: 19px;
+    transition: 0.25s;
 }
 
 .service .item .desc {
@@ -334,23 +335,21 @@ a {
     justify-content: center;
     border-radius: 50%;
     flex-shrink: 0;
+    transition: 0.25s;
 }
 
-.service .item .circle path {
-    fill: var(--primary-color);
+.service .item .circle {
+    color: var(--primary-color);
 }
 
-.service .container .active {
+.service .container .item:hover {
     box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
     border-radius: 18px;
 }
 
-.service .active .circle {
+.service .item:hover .circle {
     background: #2e80ce;
-}
-
-.service .active .circle path {
-    fill: #FFF;
+    color: #FFF;
 }
 
 .service .btn-cta {
@@ -396,12 +395,7 @@ a {
     font-weight: 300;
     line-height: 1.75;
     padding-top: 18px;
-}
-
-.guides .active .link {
-    padding-top: 28px;
-    color: #2E80CE;
-    line-height: 1.75;
+    transition: 0.25s;
 }
 
 .guides .active .link:hover {
@@ -409,13 +403,20 @@ a {
 }
 
 .guides .item {
-    height: 402px;
     padding: 42px;
     border: 16px solid #eaf6ff;
     border-radius: 4px;
+    background: #FFF;
+    transition: 0.25s;
 }
 
-.guides .active {
+.guides .item:hover {
     border-color: #2E80CE;
-    margin-top: -18px;
+    transform: translateY(-18px);
+}
+
+.guides .item:hover .link {
+    padding-top: 28px;
+    color: #2E80CE;
+    line-height: 1.75;
 }
