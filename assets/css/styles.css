@@ -44,6 +44,10 @@ html, body {
     line-height: 1.38;
 }
 
+.lv4 {
+    font-size: 1.8rem;
+}
+
 .opacity-hover:hover {
     opacity: 0.9;
 }
@@ -54,7 +58,7 @@ html, body {
 
 .btn {
     display: inline-block;
-    width: 205px;
+    min-width: 205px;
     line-height: 60px;
     border-radius: 30px;
     background: #2E80CE;
@@ -104,9 +108,9 @@ a {
 }
 
 .header .logo {
-    display: flex;
-    gap: 6px;
-    align-items: center;
+    display: inline-flex;
+    align-items: flex-start;
+    font-size: 1rem;
 }
 
 .header .company-name {
@@ -115,18 +119,20 @@ a {
 }
 
 .header .upper {
-    font-size: 1.8rem;
+    font-size: 1.8em;
     font-weight: 400;
+    line-height: 0.78;
 }
 
 .header .lower {
-    font-size: 1.2rem;
+    font-size: 1.2em;
     font-weight: 300;
+    line-height: 1.16;
 }
 
 /* action */
 .header .btn-cta {
-    width: 104px;
+    min-width: 104px;
     line-height: 44px;
     color: #FFF;
     font-size: 1.6rem;
@@ -179,6 +185,34 @@ a {
     border-radius: 50%;
 }
 
+/* logo circle */
+.header .circle {
+    position: relative;
+    margin-right: 6px;
+}
+
+.header .circle::before,
+.header .circle::after {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.header .circle::before {
+    width: 3em;
+    height: 3em;
+    background: #2E80CE;
+}
+
+.header .circle::after {
+    width: 1.6em;
+    height: 1.6em;
+    background: #FFF;
+    position: absolute;
+    top: 1.1em;
+    left: 1.1em;
+}
+
 /* ================= hero ================== */
 
 .hero {
@@ -190,11 +224,7 @@ a {
 .hero .body {
     display: flex;
     justify-content: space-between;
-}
-
-.hero .heading {
-    padding-top: 60px;
-    color: #FFF;
+    align-items: center;
 }
 
 .hero .desc {
@@ -203,7 +233,7 @@ a {
 }
 
 .hero .info {
-    width: 43%;
+    width: 44.18%;
 }
 
 .hero .contact {
@@ -214,24 +244,21 @@ a {
 }
 
 .hero .group-img {
-    position: relative;
+    display: flex;
+    align-items: center;
     width: 45.64%;
     height: 540px;
 }
 
 .hero .group-img .small-img {
-    position: absolute;
-    right: 0;
-    top: 65px;
-    bottom: 65px;
     width: 39.32%;
     height: 410px;
     border-radius: 6px;
     object-fit: cover;
+    margin-left: -6px;
 }
 
 .hero .group-img .giant-img {
-    position: absolute;
     width: 61.79%;
     height: 100%;
     object-fit: cover;
@@ -243,4 +270,152 @@ a {
     color: #FFF;
     font-size: 1.8rem;
     line-height: 1.67;
+}
+
+/* ============================ service ================== */
+
+.service {
+    margin-top: 170px;
+}
+
+.service .heading-top {
+    width: 40%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service .heading-top .desc {
+    padding-top: 18px;
+}
+
+.service .media {
+    width: 48%;
+    height: 570px;
+}
+
+.service .body {
+    display: flex;
+    align-items: center;
+    gap: 11%;
+    padding-top: 70px;
+}
+
+.service .media .img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.service .container {
+    width: 40.17%;
+}
+
+.service .item {
+    padding: 21px 18px 20px 22px;
+    display: flex;
+    align-items: center;
+    gap: 19px;
+}
+
+.service .item .desc {
+    padding-top: 8px;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+.service .item .circle {
+    width: 60px;
+    height: 60px;
+    background: #eff6fd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.service .item .circle path {
+    fill: var(--primary-color);
+}
+
+.service .container .active {
+    box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 18px;
+}
+
+.service .active .circle {
+    background: #2e80ce;
+}
+
+.service .active .circle path {
+    fill: #FFF;
+}
+
+.service .btn-cta {
+    margin-top: 55px;
+}
+
+/* ======================== guides ========================= */
+
+.guides {
+    margin-top: 170px;
+    background: #f6fbff;
+}
+
+.guides .content {
+    padding: 100px 0 116px;
+}
+
+.guides .heading-top .desc {
+    padding-top: 18px;
+    width: 40%;
+}
+
+.guides .container {
+    margin-top: 86px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+}
+
+.guides .item .heading {
+    padding-top: 18px;
+}
+
+.guides .item .desc {
+    font-size: 1.6rem;
+    line-height: 1.75;
+    padding-top: 28px;
+}
+
+.guides .container .link {
+    display: inline-block;
+    color: #575f66;
+    font-weight: 300;
+    line-height: 1.75;
+    padding-top: 18px;
+}
+
+.guides .active .link {
+    padding-top: 28px;
+    color: #2E80CE;
+    line-height: 1.75;
+}
+
+.guides .active .link:hover {
+    opacity: 0.9;
+}
+
+.guides .item {
+    height: 402px;
+    padding: 42px;
+    border: 16px solid #eaf6ff;
+    border-radius: 4px;
+}
+
+.guides .active {
+    border-color: #2E80CE;
+    margin-top: -18px;
 }
