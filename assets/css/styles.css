@@ -420,3 +420,334 @@ a {
     color: #2E80CE;
     line-height: 1.75;
 }
+
+/* ======================== about ==================== */
+
+.about {
+    margin-top: 170px;
+}
+
+.about .body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .images {
+    position: relative;
+    width: 48.71%;
+    min-height: 491px;
+}
+
+.about .info {
+    width: 40.17%;
+}
+
+.about .images .img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+
+.about .images .img-1 {
+    width: 89.82%;
+    height: 370px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.about .images .img-2 {
+    width: 58.24%;
+    height: 370px;
+    position: absolute;
+    top: 121px;
+    right: 10.17%;
+}
+
+.about .info .desc {
+    padding-top: 18px;
+}
+
+.about .info .btn-cta {
+    margin-top: 38px;
+}
+
+/* ==================== dentists ================== */
+
+.dentists {
+    margin-top: 170px;
+}
+
+.dentists .heading-top {
+    text-align: center;
+}
+
+.dentists .heading-top .heading {
+    padding-bottom: 38px;
+}
+
+.dentists .container {
+    display: flex;
+    padding-top: 70px;
+    gap: 30px;
+    overflow: hidden;
+}
+
+.dentists .container a {
+    flex-shrink: 0;
+    width: calc(25% - 22.5px);
+    border-radius: 6px;
+}
+
+.dentists .item .avt {
+    width: 100%;
+    height: 290px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.dentists .container .heading {
+    font-weight: 400;
+    line-height: 1.75;
+    text-align: center;
+    padding-top: 12px;
+}
+
+.dentists .container .desc {
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.85;
+    text-align: center;
+}
+
+.dentists .button {
+    display: flex;
+    gap: 18px;
+    padding-top: 38px;
+    justify-content: center;
+}
+
+.dentists .button .left-btn,
+.dentists .button .right-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.dentists .button .left-btn {
+    border: 1px solid #575f66;
+}
+
+.dentists .button .right-btn {
+    background-color: #2E80CE;
+    border: 1px solid #2e80ce;
+}
+
+.dentists .right-btn svg {
+    rotate: 180deg;
+}
+
+/* ====================== download ===================== */
+
+.download {
+    margin-top: 170px;
+}
+
+.download .content {
+    margin-top: 95px;
+    background: #2E80CE;
+    position: relative;
+    height: 427px;
+    border-radius: 4px;
+}
+
+.download .body {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.download .img {
+    position: absolute;
+    top: -95px;
+    left: 70px;
+}
+
+.download .info {
+    width: 50.08%;
+    margin-right: 70px;
+    margin-top: 76px;
+}
+
+.download .heading {
+    color: #FFF;
+}
+
+.download .desc {
+    color: #FFF;
+    padding-top: 18px;
+}
+
+.download .row {
+    display: flex;
+    gap: 28px;
+    padding-top: 38px;
+}
+
+/* ========================= news ======================= */
+
+.news {
+    margin-top: 170px;
+}
+
+.news .body {
+    display: flex;
+    align-items: center;
+}
+
+.news .left {
+    width: 40.17%;
+}
+
+.news .left .link {
+    display: inline-block;
+    text-decoration: underline;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.5;
+    padding-top: 28px;
+}
+
+.news .right {
+    display: flex;
+    gap: 30px;
+    width: 48.71%;
+    margin-left: auto;
+    overflow: hidden;
+}
+
+.news .right .section {
+    flex-shrink: 0;
+    width: calc(100% / 2 - 15px);
+    border: 1px solid #e8ebee;
+    border-radius: 12px;
+    transition: 0.25s;
+}
+
+.news .right img {
+    width: 100%;
+    height: 172px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+.news .right .heading {
+    line-height: 1.625;
+    padding-top: 18px;
+}
+
+.news .right .desc {
+    font-size: 1.4rem;
+    line-height: 1.71;
+    padding-top: 10px;
+}
+
+.news .right .link {
+    display: block;
+    color: #10375C;
+    line-height: 1.4rem;
+    padding-top: 12px;
+    padding-bottom: 22px;
+}
+
+.news .right .heading,
+.news .right .desc,
+.news .right .link {
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+
+.news .right .section:hover {
+    border: none;
+    box-shadow: 0px 18px 50px 0px rgba(0, 0, 0, 0.05);
+}
+
+.news .right .section:hover .link {
+    color: #2E80CE;
+}
+
+.news .button {
+    display: flex;
+    gap: 18px;
+    padding-top: 28px;
+}
+
+.news .button .left-btn,
+.news .button .right-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.news .button .left-btn {
+    border: 1px solid #575f66;
+}
+
+.news .button .right-btn {
+    background-color: #2E80CE;
+    border: 1px solid #2e80ce;
+}
+
+.news .right-btn svg {
+    rotate: 180deg;
+}
+
+/* =========================== appointment ====================== */
+
+.appointment {
+    margin-top: 170px;
+}
+
+.appointment .content {
+    background: #f6fbff;
+}
+
+.appointment .body {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.appointment .heading::after {
+    content: "";
+    display: block;
+    width: 11.62%;
+    height: 2px;
+    background: #2E80CE;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 18px;
+}
+
+.appointment .desc {
+    padding-top: 18px;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    width: 52.7%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.appointment .btn-cta {
+    margin-top: 38px;
+}
