@@ -433,37 +433,33 @@ a {
     justify-content: space-between;
 }
 
-.about .images {
+.about .info {
+    width: 40.17%;
+}
+
+.about .media {
     position: relative;
     width: 48.71%;
     min-height: 491px;
 }
 
-.about .info {
-    width: 40.17%;
-}
-
-.about .images .img {
+.about .media .img {
     object-fit: cover;
-    width: 100%;
-    height: 100%;
     border-radius: 6px;
+    position: absolute;
+    height: 370px;
 }
 
-.about .images .img-1 {
+.about .media .img-1 {
     width: 89.82%;
-    height: 370px;
-    position: absolute;
     top: 0;
     left: 0;
 }
 
-.about .images .img-2 {
+.about .media .img-2 {
     width: 58.24%;
-    height: 370px;
-    position: absolute;
     top: 121px;
-    right: 10.17%;
+    right: 0;
 }
 
 .about .info .desc {
@@ -501,11 +497,16 @@ a {
     border-radius: 6px;
 }
 
+.dentists .item:hover .avt {
+    transform: scale(1.02);
+}
+
 .dentists .item .avt {
     width: 100%;
     height: 290px;
     border-radius: 6px;
     object-fit: cover;
+    transition: 0.25s;
 }
 
 .dentists .container .heading {
@@ -529,8 +530,7 @@ a {
     justify-content: center;
 }
 
-.dentists .button .left-btn,
-.dentists .button .right-btn {
+.dentists .button .control-btn {
     width: 36px;
     height: 36px;
     border-radius: 50%;
@@ -538,19 +538,19 @@ a {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-}
-
-.dentists .button .left-btn {
     border: 1px solid #575f66;
+    color: #575F66;
+    transition: 0.25s;
 }
 
-.dentists .button .right-btn {
-    background-color: #2E80CE;
-    border: 1px solid #2e80ce;
-}
-
-.dentists .right-btn svg {
+.dentists .control-btn:nth-child(2) svg {
     rotate: 180deg;
+}
+
+.dentists .control-btn:hover {
+    color: #FFF;
+    background-color: #2e80ce;
+    border: none;
 }
 
 /* ====================== download ===================== */
@@ -616,12 +616,15 @@ a {
 
 .news .left .link {
     display: inline-block;
-    text-decoration: underline;
     color: var(--primary-color);
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.5;
     padding-top: 28px;
+}
+
+.news .left .link:hover {
+    text-decoration: underline;
 }
 
 .news .right {
@@ -641,10 +644,12 @@ a {
 }
 
 .news .right img {
-    width: 100%;
+    width: calc(100% + 2px);
     height: 172px;
     object-fit: cover;
     border-radius: 12px 12px 0 0;
+    margin-left: -1px;
+    margin-top: -1px;
 }
 
 .news .right .heading {
@@ -689,8 +694,7 @@ a {
     padding-top: 28px;
 }
 
-.news .button .left-btn,
-.news .button .right-btn {
+.news .button .control-btn {
     width: 36px;
     height: 36px;
     border-radius: 50%;
@@ -698,18 +702,18 @@ a {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-}
-
-.news .button .left-btn {
     border: 1px solid #575f66;
+    transition: 0.25s;
 }
 
-.news .button .right-btn {
+
+.news .button .control-btn:hover {
     background-color: #2E80CE;
-    border: 1px solid #2e80ce;
+    color: #FFF;
+    border: none;
 }
 
-.news .right-btn svg {
+.news .control-btn:nth-child(2) svg {
     rotate: 180deg;
 }
 
